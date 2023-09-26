@@ -1,7 +1,7 @@
 # GGGGM Syntax Highlighting
 A collection of GGGGM Syntax Highlighting Resources for different editors
 
-## Syntax Highlighters Available
+## Available Syntax Highlighters
 - Visual Studio Code - Available [on the marketplace](https://marketplace.visualstudio.com/items?itemName=GGGGM-Association.ggggm-syntax-highlighting) and in the `vscode` folder
 - Nodepad++ - Import `GGGGM.UDL.xml` in the UDL menu
 
