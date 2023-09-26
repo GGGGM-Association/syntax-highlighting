@@ -1,0 +1,48 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "GGGGM",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.ggggm",
+					"match": "(\\/\\/|NEXT)"
+				},
+				{
+					"name": "keyword.operator.ggggm",
+					"match": "\\$"
+				},
+				{
+					"name": "variable.name",
+					"match": "((?<=(char |int32 |int64 |bin32 |bin64 |\\/\\/ |\\$ ))(([0-z])([0-z])|([0-z])))|(([0-z])([0-z])|([0-z]))((?= \\$))"
+				},
+				{
+					"name": "storage.type.ggggm",
+					"match": "(char|int32|int64|bin32|bin64)"
+				},
+				{
+					"name": "storage.modifier",
+					"match": "(ASCII|CHAR|INT32|INT64|BIN32|BIN64)"
+				},
+				{
+					"name": "entity.name.function",
+					"match": "(PLEASE RUN THIS|RUN THIS PLEASE|I BEG YOU TO)"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.ascii.ggggm",
+			"begin": "p_",
+			"end": "\n"
+		}
+	},
+	"scopeName": "source.ggggm"
+}

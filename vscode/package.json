@@ -1,0 +1,37 @@
+{
+    "name": "ggggm-syntax-highlighting",
+    "displayName": "GGGGM Syntax Highlighting for VSCode",
+    "description": "",
+    "version": "1.0.0",
+    "icon": "icon.png",
+    "license": "MIT",
+    "repository": {
+        "url": "https://github.com/GGGGM-Association/syntax-highlighting/tree/main/vscode",
+        "type": "git"
+    },
+    "author": {
+        "name": "The GGGGM Association",
+        "email": "theggggmlang@gmail.com",
+        "url": "https://github.com/GGGGM-Association"
+    },
+    "publisher": "GGGGM-Association",
+    "engines": {
+        "vscode": "^1.46.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "ggggm",
+            "aliases": ["GGGGM", "ggggm"],
+            "extensions": [".ggggm",".pyggggm"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "ggggm",
+            "scopeName": "source.ggggm",
+            "path": "./syntaxes/ggggm.tmLanguage.json"
+        }]
+    }
+}
